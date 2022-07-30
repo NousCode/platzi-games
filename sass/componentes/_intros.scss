@@ -29,7 +29,10 @@
 		@include titulos($Fuente2);
 	}
 	&__titulo {
+		font-family: $Fuente2;
+		text-transform: uppercase;
 		font-size: 50px;
+		line-height: 60px;
 	}
 
 	&__autor {

@@ -1,0 +1,60 @@
+.sidebar--listado {
+    max-width: 100%;
+    padding: 20px 20px 10px 5px;
+    @include caja();
+    h3 {
+      @include font-size(20px);
+			text-align: center;
+			@include titulos($Fuente2);
+		}
+		ul {
+			display: block;
+			padding-left: 10px;
+		}
+		li {
+			padding: 10px 0;
+			margin: 10px 0;
+			border-top: 1px solid #ccc;
+			list-style: none;
+		}
+		a {
+			display: flex;
+			padding: 10px 20px;
+			@include font-size(15px);
+			color: $color-primario;
+		}
+		&__numero {
+			margin-right: 20px;
+			color: get-opacity($color-primario, 0.5);
+		}
+
+		@include media(desktop-s) {
+			max-width: 300px;
+		margin-bottom: 20px;
+    padding: 20px 20px 10px 20px;
+    @include caja();
+    h3 {
+      @include font-size(20px);
+			@include titulos($Fuente2);
+		}
+		ul {
+			display: block;
+		}
+		li {
+			padding: 10px 0;
+			margin: 10px 0;
+			border-top: 1px solid #ccc;
+			list-style: none;
+		}
+		a {
+			display: flex;
+			padding: 10px 20px;
+			@include font-size(15px);
+			color: $color-primario;
+		}
+		&__numero {
+			margin-right: 20px;
+			color: get-opacity($color-primario, 0.5);
+		}
+		}
+}
